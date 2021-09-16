@@ -1,0 +1,362 @@
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+}
+.card {
+  width: 100%;
+  height: 95vh;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+}
+.block1 {
+  width: 50%;
+  height: 50%;
+  background-color: beige;
+  background-image: url(images/image_part_001.jpg);
+  transform: rotate(0deg);
+  transform-origin: top left;
+  transition: transform 0.6s linear;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0px;
+  display: flex;
+}
+.block1 #open {
+  width: 80px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 30px 15px;
+  color: white;
+  font-size: larger;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  transition-delay: 1s;
+}
+.block1 #open.btn {
+  width: 100px;
+}
+.block2 {
+  width: 50%;
+  height: 50%;
+  background-color: beige;
+  position: absolute;
+  bottom: 0;
+  background-image: url(images/image_part_003.jpg);
+  transform: rotate(0deg);
+  transform-origin: left bottom;
+  transition: transform 0.6s linear;
+  transition-delay: 0.2s;
+  background-size: cover;
+  background-position: top;
+  margin: 0px;
+}
+.block3 {
+  width: 50%;
+  height: 50%;
+  background-color: beige;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url(images/image_part_004.jpg);
+  transform: rotate(0deg);
+  transform-origin: right bottom;
+  transition: transform 0.6s linear;
+  transition-delay: 0.4s;
+  background-size: cover;
+  background-position: top;
+  margin: 0px;
+}
+.block4 {
+  width: 50%;
+  height: 50%;
+  background-color: beige;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(images/image_part_002.jpg);
+  transform: rotate(0deg);
+  transform-origin: right top;
+  transition: transform 0.6s linear;
+  transition-delay: 0.6s;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0px;
+}
+.main {
+  position: absolute;
+  left: -100%;
+  transition: all 0.5s ease-in-out;
+}
+.main.extra {
+  width: 100%;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+  transition-delay: 1s;
+  background-image: url(images/snowscat-JI2I843lx4w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0%;
+}
+.main .navbar {
+  color: white;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(top to bottom red green);
+  justify-content: space-around;
+}
+.main .uzbImg {
+  width: 120px;
+  height: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in;
+}
+.main .uzbImg img {
+  width: 100%;
+  height: 80%;
+}
+.main .navbar ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 0px;
+}
+.main .navbar ul li {
+  width: 60px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: 10px;
+  border: 1px solid rgb(182, 137, 53);
+  padding: 5px 10px;
+  font-size: 12px;
+  transition: all 0.3s linear;
+}
+.main .navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+#close{
+  transition: all 0.3s ease-in-out;
+}
+.body{
+  display: flex;
+justify-content: center;
+}
+.body h1{
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  color: rgb(182, 137, 53);
+  /* box-shadow: -5px 5px 15px currentColor; */
+  position: relative;
+  font-family: fantasy;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+}
+.body h1 strong{
+  font-size: 46px;
+  font-family: fantasy;
+  color: #a16c08;
+  text-shadow: 
+    0 0 7px #daa520,
+    0 0 10px #d4af37,
+    0 0 21px #cfb53b,
+    0 0 42px #c5b358,
+    0 0 62px #e6e3d4;
+}
+.navbar .social{
+  margin-left: 150px;
+}
+.navbar .social input{
+  width: 150px;
+  height: 30px;
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+}
+.navbar .social a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  margin-left: 5px;
+}
+
+.container #footer{
+  position: absolute;
+  bottom: -40%;
+  width: 100%;
+}
+.container #footer #footer-menu{
+  position: absolute;
+  bottom: -40%;
+  width: 600px;
+  height: 200px;
+  left: 40px;
+  box-shadow: 2px 3px 5px 1px rgb(219, 213, 213);
+  position: relative;
+  cursor: pointer;
+}
+.container #footer .toDo{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(204, 203, 203);
+  box-sizing: border-box;
+}
+.container #footer #footer-menu .footerImg1{
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: -100%;
+}
+.container #footer .toDo h4{
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s linear;
+  padding-bottom: 3px;
+  box-sizing: border-box;
+}
+.container #footer .toDo h4 a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-left: 10px;
+  color: black;
+}
+.container #footer .toDo h4 i{
+  margin-left: 5px;
+}
+.information{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  position: absolute;
+  bottom: -1070%;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.information .image1 img{
+  width: 300px;
+  height: 300px;
+}
+.information h1{
+  font-size: 36px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+.information p{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+.information .image2 img{
+  width: 400px;
+  height: 300px;
+  margin-left: 50px;
+}
+.information .image3 img{
+  width: 300px;
+  height: 500px;
+  margin-left: 30px;
+}
+.information .image4 img{
+  width: 900px;
+  height: 800px;
+  margin-left: 70px;
+}
+.information .image5 img{
+  width: 450px;
+  height: 500px;
+  /* margin-left: 150px; */
+}
+.information .image6 img{
+  width: 1000px;
+  height: 700px;
+}
+.information .image7 img{
+  width: 800px;
+  height: 700px;
+  margin-left: 80px;
+}
+.information .image8 img{
+  width: 400px;
+  height: 350px;
+  margin-left: 100px;
+}
+.information .image9 img{
+  width: 800px;
+  height: 600px;
+  margin-left: 60px;
+}
+
+
+
+/* css animations */
+.block1 #open:hover {
+  box-shadow: -5px 5px 15px currentColor;
+  border-radius: 40%;
+  transition: 0.4s linear;
+}
+.card .block1.show1 {
+  transform: rotate(-180deg);
+  transition: all 0.6s linear;
+}
+.card .block2.show2 {
+  transform: rotate(180deg);
+  transition: transform 0.6s ease-in;
+  transition-delay: 0.2s;
+}
+.card .block3.show3 {
+  transform: rotate(-180deg);
+  transition: transform 0.6s ease-in;
+  transition-delay: 0.4s;
+}
+.card .block4.show4 {
+  transform: rotate(180deg);
+  transition: transform 0.6s ease-in;
+  transition-delay: 0.6s;
+}
+.main .navbar ul li:hover {
+  box-shadow: -5px 5px 15px #daa520;
+  border-radius: 10%;
+  transition: 0.4s linear;
+}
+.main .navbar:hover #uzbImg {
+  transform: rotate(360deg);
+  transition: all 1s linear;
+}
+.container #footer .toDo h4:hover{
+  border-bottom: 1px solid black;
+  transition: all 0.3s linear;
+}

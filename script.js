@@ -1,0 +1,18 @@
+const open = document.getElementById('open')
+const close = document.getElementById('close')
+const block1 = document.getElementById('block1')
+const block2 = document.getElementById('block2')
+const block3 = document.getElementById('block3')
+const block4 = document.getElementById('block4')
+const extra = document.getElementById('extra')
+
+open.addEventListener('click', () => block1.classList.add('show1'))
+open.addEventListener('click', () => block2.classList.add('show2'))
+open.addEventListener('click', () => block3.classList.add('show3'))
+open.addEventListener('click', () => block4.classList.add('show4'))
+open.addEventListener('click', () => extra.classList.add('extra'))
+
+close.addEventListener('click', () => block1.classList.remove('show1'))
+close.addEventListener('click', () => block2.classList.remove('show2'))
+close.addEventListener('click', () => block3.classList.remove('show3'))
+close.addEventListener('click', () => block4.classList.remove('show4'))
